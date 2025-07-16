@@ -1,4 +1,4 @@
-name: "Build3"
+name: "Build2"
 on:
   workflow_dispatch:
 
@@ -13,4 +13,4 @@ jobs:
           armbian_target: "build" # build=image, kernel=kernel
           armbian_board: "radxa-zero3" # Build target for Radxa Zero 3
           armbian_kernel_branch: "current" # Kernel branch (e.g., current, edge)
-          armbian_ui: "minimal"
+          armbian_ui: "server"
