@@ -201,7 +201,7 @@ runs:
         gpg --passphrase-fd 0 --armor --detach-sign --pinentry-mode loopback --batch --yes \
         build/output/images/*.img*.xz
 
-    - uses: ncipollo/release-action@v1
+    - uses: ncipollo/release-action@v1.14.0
       with:
         tag: ${{ inputs.armbian_release_tag != '' && inputs.armbian_release_tag || env.ARMBIAN_VERSION }}
         name: "${{ inputs.armbian_release_tittle }}"
