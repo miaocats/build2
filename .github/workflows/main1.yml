@@ -6,7 +6,7 @@ jobs:
   build-armbian:
     runs-on: ubuntu-24.04
     steps:
-      - uses: miaocats/build@main
+      - uses: miaocats/build2@main
         with:
           armbian_token: "${{ secrets.GITHUB_TOKEN }}" # GitHub token
           armbian_release: "noble" # Userspace release (e.g., noble, jammy)
