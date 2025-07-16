@@ -1,0 +1,15 @@
+name: "Build1"
+on:
+  workflow_dispatch:
+
+jobs:
+  build-armbian:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: miaocats/build@main
+        with:
+          armbian_token: "${{ secrets.GITHUB_TOKEN }}" # GitHub token
+          armbian_release: "noble" # Userspace release (e.g., noble, jammy)
+          armbian_target: "build" # build=image, kernel=kernel
+          armbian_board: "radxa-zero3" # Build target for Radxa Zero 3
+          armbian_kernel_branch: "current" # Kernel branch (e.g., current, edge)
