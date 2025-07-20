@@ -9,7 +9,7 @@ jobs:
       - uses: miaocats/build2@main
         with:
           armbian_token: "${{ secrets.GITHUB_TOKEN }}" # GitHub token
-          armbian_release: "bookworm" # Userspace release (e.g., noble, jammy)
+          armbian_release: "trixie" # Userspace release (e.g., noble, jammy)
           armbian_target: "build" # build=image, kernel=kernel
           armbian_board: "radxa-zero3" # Build target for Radxa Zero 3
           armbian_kernel_branch: "edge" # Kernel branch (e.g., current, edge)
