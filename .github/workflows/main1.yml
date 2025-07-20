@@ -12,5 +12,5 @@ jobs:
           armbian_release: "trixie" # Userspace release (e.g., noble, jammy)
           armbian_target: "build" # build=image, kernel=kernel
           armbian_board: "radxa-zero3" # Build target for Radxa Zero 3
-          armbian_kernel_branch: "current" # Kernel branch (e.g., current, edge)
+          armbian_kernel_branch: "edge" # Kernel branch (e.g., current, edge)
           armbian_ui: "minimal"
